@@ -1,0 +1,89 @@
+.header {
+  background-color: #4b73b5;
+}
+
+.logo {
+  float: left;
+  height: 36px;
+  width: 120px;
+  padding: 20px 0 20px 0;
+}
+
+.schedule {
+  position: relative;
+}
+
+.schedule-container:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 30px;
+  left: 0;
+  right: 0;
+  top: -29px;
+}
+
+.schedule-container {
+  position: absolute;
+  z-index: 10;
+  display: inline-block;
+  top: 172%;
+  left: -9999px;
+}
+
+.schedule:hover .schedule-container {
+  left: 7%;
+}
+
+.schedule-container__content {
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.schedule-container__triangle {
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ff000000;
+  border-right: 10px solid #ff000000;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid #ff000000;
+  position: absolute;
+  left: 80%;
+  bottom: 99%;
+}
+
+.schedule-container__content span {
+  color: #221f1f;
+font-weight: 300;
+}
+
+.schedule-container__content span:first-child {
+  color: #1c5bc3;
+  font-weight: 700;
+}
+
+
+.header-contacts {
+  float: right;
+  margin: 16px 0;
+  text-align: right;
+  font-weight: 700;
+  width: 175px;
+  font-style: normal;
+}
+
+.header-contacts__tel {
+  font-size: 21px;
+  color: white;
+  text-decoration: none;
+}
+
+.schedule__link {
+  font-size: 14px;
+  color: rgba(255,255,255,.7);
+}

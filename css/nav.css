@@ -1,0 +1,110 @@
+.sidebar {
+  width: 180px;
+  float: left;
+}
+
+.navigation {
+  margin: 40px 0px 0 0;
+}
+
+.navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list__item {
+  padding-bottom: 30px;
+}
+
+.navigation-list__link {
+  letter-spacing: 2.4px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #4b73b5;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.navigation-list__img {
+  width: 23px;
+  height: 22px;
+  vertical-align: middle;
+  float: left;
+  margin-right: 17px;
+  background: url('../img/main/nav/spritesheet.png') 0 0 no-repeat;
+}
+
+.main-icon {
+  background-position: -5px -33px;
+}
+
+.comments-icon {
+  background-position: -5px -5px;
+}
+
+.team-icon {
+  background-position: -65px -5px;
+}
+
+.navigation-list__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation-list__link--activ, .navigation-list__link:hover {
+  color: #221f1f;
+}
+
+.navigation-list__link--activ .main-icon, .navigation-list__link:hover .main-icon {
+  background-position: -35px -33px;
+}
+
+.navigation-list__link--activ .comments-icon, .navigation-list__link:hover .comments-icon {
+  background-position: -35px -5px;
+}
+
+.navigation-list__link--activ .team-icon, .navigation-list__link:hover .team-icon {
+  background-position: -65px -33px;
+}
+
+.breadcrumbs {
+  margin-top: 23px;
+}
+
+.breadcrumbs__link {
+  font-size: 14px;
+  color: #1c5bc3;
+  font-style: italic;
+  line-height: 1.125em;
+  opacity: .8;
+  margin-right: 7px;
+}
+
+.breadcrumbs__list {
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.breadcrumbs__item:after {
+  content: '/';
+  display: inline-block;
+  color: #221f1f;
+  opacity: .8;
+}
+
+.breadcrumbs__item:last-child:after {
+  display: none;
+}
+
+.breadcrumbs__link--active {
+  color: #221f1f;
+  opacity: .8;
+  text-decoration: none;
+}

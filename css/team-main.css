@@ -1,0 +1,125 @@
+.team {
+  margin-top: 22px;
+}
+
+.team__list, .partners__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team__item {
+  display: inline-block;
+  width: 261px;
+  text-align: center;
+  position: relative;
+  margin: 0 14px 40px 15px;
+  vertical-align: top;
+}
+
+.team__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 24px;
+  line-height: 1.313em;
+  color: #fff;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.team__avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.team__avatar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4b73b587;
+}
+
+.team__img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.team__full-name {
+  color: #221f1f;
+  font-size: 18px;
+  line-height: 1.313em;
+  font-weight: bold;
+}
+
+.team__job-title {
+  color: #4b73b5;
+  font-size: 14px;
+  line-height: 1.313em;
+  font-weight: bold;
+}
+
+.team-text {
+  color: #221f1f;
+  font-size: 14px;
+  line-height: 1.313em;
+}
+
+.partners {
+  margin-bottom: 40px;
+}
+
+.partners__item {
+  display: inline-block;
+  width: 261px;
+  text-align: center;
+  position: relative;
+  margin: 0 14px 55px 15px;
+}
+
+.partners-item__logo {
+  width: 160px;
+  height: 75px;
+  filter: grayscale(100%);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.partners-item__logo:hover {
+  filter: grayscale(0);
+}
+
+.bmp-logo {
+  background: url(../img/main/partners/bmp.png) center center no-repeat;
+}
+
+.tetra-logo {
+  background: url(../img/main/partners/tetra.png) center center no-repeat;
+}
+
+.sib-logo {
+  background: url(../img/main/partners/sib.png) center center no-repeat;
+}
+
+.oneair-logo {
+  background: url(../img/main/partners/oneair.png) center center no-repeat;
+}
+
+.bing-logo {
+  background: url(../img/main/partners/bing.png) center center no-repeat;
+}
+
+.ural-logo {
+  background: url(../img/main/partners/ural.png) center center no-repeat;
+}

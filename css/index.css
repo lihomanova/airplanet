@@ -1,0 +1,104 @@
+.wrapper-intro {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-image: url(../img/hi.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.wrapper-intro:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.block-intro {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+  vertical-align: middle;
+  box-sizing: border-box;
+  -webkit-animation: start 1s;
+  animation: start 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes start {
+  0%, 20%, 40%, 55%, 70%, 80%, 90%, 95%, 97%, 99%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0);
+  }
+  55% {
+    transform: translateY(-35%);
+  }
+  65% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  95% {
+    transform: translateY(0);
+  }
+  97% {
+    transform: translateY(-7%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.block-intro__img {
+  display: block;
+  width: 112px;
+  height: 186px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.block-intro_btn {
+  display: inline-block;
+  padding: 10px 45px 10px 15px;
+  border-radius: 3px;
+  border: 1px solid #1c5bc4;
+  font-size: 12px;
+  color: #1c5bc4;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 5px;
+  font-weight: bold;
+  background: url(../img/main_icon.png) 165px center no-repeat;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.block-intro_btn:hover {
+  color: #fff;
+  background: url(../img/main_icon_hover.png) 90% center no-repeat;
+  background-color: #1c5bc4;
+}
